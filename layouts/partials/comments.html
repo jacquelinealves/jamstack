@@ -1,0 +1,10 @@
+
+{{- if .Params.photoAuthor }}
+<small style="margin: .5rem 0 2rem; display: inline-block;">
+  <i>Photo taken by: {{ .Params.photoAuthor }}</i>
+</small>
+{{- end }}
+
+<p>
+  <textarea style="width: 100%; font-size: 1.25rem; padding: 1rem;" placeholder="Leave a comment for {{ .Title }}"></textarea>
+</p>
